@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnMenu1"
+        android:layout_width="178dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="27dp"
+        android:text="LOCAL"
+        app:layout_constraintBottom_toTopOf="@+id/btnMenu3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Menu" />
+
+    <Button
+        android:id="@+id/btnMenu3"
+        android:layout_width="175dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="25dp"
+        android:text="SHARED PREFERENCES"
+        app:layout_constraintBottom_toTopOf="@+id/btnMenu4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMenu1" />
+
+    <Button
+        android:id="@+id/btnMenu2"
+        android:layout_width="179dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="234dp"
+        android:text="SD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMenu4" />
+
+    <Button
+        android:id="@+id/btnMenu4"
+        android:layout_width="180dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="25dp"
+        android:text="DATOS"
+        app:layout_constraintBottom_toTopOf="@+id/btnMenu2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMenu3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <TextView
+        android:id="@+id/Menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        android:layout_marginBottom="71dp"
+        android:text="Menu"
+        app:layout_constraintBottom_toTopOf="@+id/btnMenu1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
